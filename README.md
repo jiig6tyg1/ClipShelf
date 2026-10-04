@@ -1,5 +1,7 @@
 # ClipShelf 1.00
 
+日本語 | [English](README.en.md)
+
 Windowsのクリップボード履歴のように使える、Mac向けの軽量な履歴アプリです。SwiftUIとAppKitで実装しています。
 
 ## 機能
