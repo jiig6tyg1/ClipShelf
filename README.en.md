@@ -20,6 +20,31 @@ An Apple Silicon Mac running macOS 13 or later. Earlier versions of macOS than 2
 
 ## Installation
 
+### Homebrew (recommended)
+
+With [Homebrew](https://brew.sh) installed, use the dedicated [third-party tap](https://github.com/jiig6tyg1/homebrew-clipshelf):
+
+```sh
+brew install --cask jiig6tyg1/clipshelf/clipshelf
+```
+
+Open ClipShelf from Applications, grant Accessibility permission in macOS, then quit and reopen the app.
+
+If you installed ClipShelf manually, quit it and move the existing `/Applications/ClipShelf.app` to the Trash before running the command. You do not need to delete settings or saved history.
+
+To update or uninstall:
+
+```sh
+brew update
+brew upgrade --cask jiig6tyg1/clipshelf/clipshelf
+# To uninstall (quit the app first):
+brew uninstall --cask clipshelf
+```
+
+Uninstalling retains settings and saved history. The Homebrew build has the same signing and notarization limitations described below.
+
+### Manual installation from ZIP
+
 1. Download `ClipShelf-1.00-macOS-arm64.zip` from [Releases](https://github.com/jiig6tyg1/ClipShelf/releases) and extract it.
 2. Move `ClipShelf.app` to Applications and open it.
 3. From the app's settings, grant ClipShelf Accessibility permission in macOS.
